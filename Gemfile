@@ -26,6 +26,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+gem 'ember-rails'
+gem 'ember-source', '1.5.0' # or the version you need
+gem 'handlebars'
+
+gem 'pry-rails'
+gem 'httparty'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
