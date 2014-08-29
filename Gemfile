@@ -12,6 +12,11 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'pg'
+gem 'ember-rails'
+gem 'ember-data-source'
+gem 'httparty'
+gem 'pry-rails'
+gem 'handlebars'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
