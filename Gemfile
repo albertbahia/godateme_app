@@ -33,6 +33,11 @@ gem 'handlebars'
 gem 'pry-rails'
 gem 'httparty'
 
+gem 'devise'
+
+# A plugin to integrate your Ember app with a (mostly stock) Devise setup
+gem "ember_devise_simple_auth"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
