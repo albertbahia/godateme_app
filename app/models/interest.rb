@@ -1,5 +1,6 @@
 class Interest < ActiveRecord::Base
 
-  belongs_to :user
+	validates_presence_of :interest_category
+	belongs_to :user
 
 end
