@@ -11,15 +11,19 @@ feature 'User edit', :devise do
     Warden.test_reset!
   end
 
-  # Scenario: User changes email address
+  # Scenario: User changes all info
   #   Given I am signed in
-  #   When I change my email address
+  #   When I change my profile
   #   Then I see an account updated message
-  scenario 'user changes email address' do
+  scenario 'user changes profile information fields' do
     user = FactoryGirl.create(:user)
     login_as(user, :scope => :user)
     visit edit_user_registration_path(user)
     fill_in 'Email', :with => 'newemail@example.com'
+    select 'Male', :from => 'user_gender'
+    fill_in 'Age', :with => '27'
+    fill_in 'Photo', :with => 'http://www.placekitten.com/300/300'
+    select 'skydiving', :from => 'user_interest_category'
     fill_in 'Current password', :with => user.password
     click_button 'Update'
     expect(page).to have_content I18n.t 'devise.registrations.updated'
