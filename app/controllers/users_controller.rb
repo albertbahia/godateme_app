@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    render status: 200, json: @users.to_json
   end
 
   def show
@@ -10,6 +11,7 @@ class UsersController < ApplicationController
     unless @user == current_user
       redirect_to :back, :alert => "Access denied."
     end
+    render status: 200, json: @user.to_json
   end
 
 end
