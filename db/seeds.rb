@@ -1,15 +1,56 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 
-
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
+# Seed data for interests
 url = URI.escape('http://api.sqoot.com/v2/categories?api_key=e158uj')
 request = HTTParty.get(url)
 interests = request['categories']
 interests.each do |interest| 
 	Interest.create({
 		interest_category: interest['category']['slug']
+	})
+end
+
+# Seed data for deals
+categories = ['skydiving', 'outdoor-adventures']
+
+categories.each do |category|
+	@sqoot = Sqoot.search(category)
+	@sqoot.each do |deal|
+		Deal.create({
+			title: deal['deal']['title'],	
+			category: deal['deal']['category_slug'],
+			description: deal['deal']['description'],
+			image_url: deal['deal']['image_url'],
+			expiration_date: deal['deal']['expires_at'],
+			merchant_id: deal['deal']['merchant']['id']
+		})
+	end
+end
+
+# Seed data for users
+emails = ['sheldon@cooper.com', 'leonard@hofstaetder.com', 'penny@penny.com', 'raj@kuth.com', 'howard@wolow.com']
+
+genders = ['Male', 'Female']
+
+names = ['sheldon', 'leonard', 'penny', 'raj', 'howard']
+
+photos = ['http://www.placekitten.com/200/200', 'http://www.placesheen.com/200/200']
+
+ages = [20..30]
+
+emails.each do |email|
+	User.create!({
+		email: email,
+		name: names.sample,
+		gender: genders.sample,
+		photo: photos.sample,
+		age: ages.sample,
+		interest_category: categories.sample,
+		password: 'test123456789test',
+		password_confirmation: 'test123456789test'
 	})
 end
