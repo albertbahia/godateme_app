@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Godateme App" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Godateme App" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "GoDateMe App" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "GoDateMe App" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -13,8 +13,12 @@
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+      <%= render 'layouts/messages' %>
+      <h3>GoDate.Me Login Page</h3>
+      <h4>Login</h4>
+      <h4>Sign Up</h4>
+ 
+
     </main>
   </body>
 </html>

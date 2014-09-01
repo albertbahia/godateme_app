@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+App = Ember.Application.create({
+	LOG_TRANSITIONS: true
+});
