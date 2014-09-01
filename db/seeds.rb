@@ -5,10 +5,11 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
-interests = ['skydiving']
-
+url = URI.escape('http://api.sqoot.com/v2/categories?api_key=e158uj')
+request = HTTParty.get(url)
+interests = request['categories']
 interests.each do |interest| 
 	Interest.create({
-		interest_category: interest	
+		interest_category: interest['category']['slug']
 	})
 end

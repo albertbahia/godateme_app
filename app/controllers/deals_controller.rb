@@ -1,12 +1,13 @@
 class DealsController < ApplicationController
-
+	before_filter :authenticate_user!
+	
 	def show
 		@deal = Deal.find(params[:id])
 		render status: 200, json: @deal.to_json
 	end
 
 	def deals_search
-		category = 'skydiving'
+		category = 'outdoor-adventures'
 		@sqoot = Sqoot.search(category)
 		@sqoot.each do |deal|
 			Deal.create({
