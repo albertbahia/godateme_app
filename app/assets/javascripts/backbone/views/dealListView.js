@@ -2,7 +2,6 @@ App.DealListView = Backbone.View.extend({
 	el: '#deal-list',
 	initialize: function() {
 		console.log('New Deal List View');
-		console.log(this);
 		this.listenTo(this.collection, 'reset', this.render);
 		this.render();
 	},

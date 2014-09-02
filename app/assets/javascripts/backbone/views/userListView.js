@@ -3,7 +3,7 @@ App.UserListView = Backbone.View.extend({
 	
 	initialize: function() {
 		console.log('New User List View');
-		console.log(this);
+		this.listenTo(this.collection, 'reset', this.render);
 		this.render();
 	},
 
