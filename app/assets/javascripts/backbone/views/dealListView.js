@@ -9,6 +9,7 @@ App.DealListView = Backbone.View.extend({
 	render: function() {
 		console.log('deal list view render');
 		this.$el.empty();
+		console.log('deal list append');
 		this.collection.each(function(deal) {
 			var dealView = new App.DealView({
 				model: deal
