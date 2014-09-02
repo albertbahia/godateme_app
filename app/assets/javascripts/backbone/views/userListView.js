@@ -1,5 +1,5 @@
 App.UserListView = Backbone.View.extend({
-	el: '#user-list',
+	el: '#match-list',
 	
 	initialize: function() {
 		console.log('New User List View');
