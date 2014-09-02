@@ -4,7 +4,6 @@ App.DealView = Backbone.View.extend({
 	initialize: function() {
 		console.log('New Deal View!');
 		this.template = HandlebarsTemplates['deals/deal'];
-		console.log(this.template);
 		this.render();
 	},
 	render: function() {
