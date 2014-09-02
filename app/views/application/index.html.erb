@@ -21,7 +21,7 @@
 
 		// Load Routers
 		App.usersRouters = new App.UsersRouters();
-		App.dealsRouters = new App.DealsRouters();
+		// App.dealsRouters = new App.DealsRouters();
 
 
 		Backbone.history.start();
@@ -29,11 +29,16 @@
 	});
 </script>
 
-<h1>User Homepage</h1>
-
 <div id="user-section">
-  <h3>Users</h3>
+  <h4>Users Online:</h4>
   <div id="user-list"></div>
+</div>
+
+<h2>My Matches</h2>
+
+<div id="match-section">
+	<h3>Matches</h3>
+	<div id="match-list"></div>
 </div>
 
 <div id="deal-section">

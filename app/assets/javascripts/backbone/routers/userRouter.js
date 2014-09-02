@@ -1,6 +1,6 @@
 App.UsersRouters = Backbone.Router.extend({
 	routes: {
-		'': 'index'
+		'': 'index',
 	},
 
 	initialize: function() {
