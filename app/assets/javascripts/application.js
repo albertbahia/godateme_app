@@ -12,32 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
 
-App = Ember.Application.create({
-	LOG_TRANSITIONS: true
-});
-
-// ---> Ember Router located at router.js.coffee
-
-App.ApplicationAdapter = DS.RESTAdapter.extend({
-	host: 'localhost:3000'
-});
-
-App.UsersRoute = Ember.Route.extend({
-	model: function() {
-		return this.store.findAll('user');
-	}
-});
-
-App.User = DS.Model.extend({
-	email: DS.attr('string'),
-	name: DS.attr('string'),
-	gender: DS.attr('string'),
-	photo: DS.attr('string'),
-	age: DS.attr('number'),
-	interest_category: DS.attr('string')
-});
 
 

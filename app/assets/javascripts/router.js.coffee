@@ -3,6 +3,5 @@
 App.Router.map () -> 
 	console.log('ember routing');
 	console.log(this);
-	@resource('users');	
-
+	@resource('users');
 
