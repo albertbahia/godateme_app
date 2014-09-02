@@ -14,7 +14,7 @@ App.DealListView = Backbone.View.extend({
 			var dealView = new App.DealView({
 				model: deal
 			});
-			this.$el.append(dealView.$el);
+			this.$el.prepend(dealView.$el);
 		}, this);
 	}
 });

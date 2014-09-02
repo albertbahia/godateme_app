@@ -14,7 +14,7 @@ App.UserListView = Backbone.View.extend({
 				model: user
 			});
 			console.log('user list append');
-			this.$el.append(userView.$el);
+			this.$el.prepend(userView.$el);
 		}, this);
 	}
 });
