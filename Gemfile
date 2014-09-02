@@ -15,6 +15,7 @@ gem 'pg'
 gem 'backbars'
 gem 'httparty'
 gem 'pry-rails'
+gem 'rails_12factor'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
