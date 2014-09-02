@@ -40,7 +40,7 @@ names = ['sheldon', 'leonard', 'penny', 'raj', 'howard']
 
 photos = ['http://www.placekitten.com/200/200', 'http://www.placesheen.com/200/200']
 
-ages = [20..30]
+ages = [20, 21, 22, 23, 24, 25, 26, 27, 28]
 
 emails.each do |email|
 	User.create!({
@@ -54,3 +54,6 @@ emails.each do |email|
 		password_confirmation: 'test123456789test'
 	})
 end
+
+
+
