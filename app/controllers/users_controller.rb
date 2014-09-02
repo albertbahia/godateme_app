@@ -4,7 +4,6 @@ class UsersController < ApplicationController
   def index
     @users = current_user.find_matches
     # @users = Match.where(user_id1: current_user.id)
-
     render status: 200, json: @users.to_json
   end
 
