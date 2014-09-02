@@ -55,5 +55,17 @@ emails.each do |email|
 	})
 end
 
+user_id1s = [1 ,2 ,3 ,4]
 
+user_id2s = [2, 4, 6, 8]
+
+date_deal_ids = [1 ,3, 5 ,7]
+
+user_id1s.each do |user_id1|
+	Match.create({
+		user_id1: user_id1,
+		user_id2: user_id2s.sample,
+		date_deal_id: date_deal_ids.sample
+	})
+end
 
