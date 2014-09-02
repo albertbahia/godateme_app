@@ -32,17 +32,3 @@ App = {
 	Routers: {}
 };
 
-$(function() {
-
-	App.usersCollection = new App.UsersCollection();
-	App.usersCollection.fetch({reset: true});
-
-	App.usersView = new App.UserListView({
-		collection: App.usersCollection
-	})
-
-	App.routers = new App.UsersRouters();
-
-	Backbone.history.start();
-});
-

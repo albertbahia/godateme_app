@@ -1,0 +1,42 @@
+<script type="text/javascript">
+	$(function() {
+
+		// Load collections
+		App.usersCollection = new App.UsersCollection();
+		App.usersCollection.fetch({reset: true});
+
+		App.dealsCollection = new App.DealsCollection();
+		App.dealsCollection.fetch({reset: true});
+
+
+		// Load views
+		App.usersView = new App.UserListView({
+			collection: App.usersCollection
+		});
+
+		App.dealsView = new App.DealListView({
+			collection: App.dealsCollection
+		});
+
+
+		// Load Routers
+		App.usersRouters = new App.UsersRouters();
+		App.dealsRouters = new App.DealsRouters();
+
+
+		Backbone.history.start();
+		console.log('OH EM GEEE');
+	});
+</script>
+
+<h1>Hello</h1>
+
+<div id="user-section">
+  <h3>Users</h3>
+  <div id="user-list"></div>
+</div>
+
+<div id="deal-section">
+  <h3>Deals</h3>
+  <div id="deal-list"></div>
+</div>
