@@ -31,11 +31,17 @@ img {
 .delete-match-button {
   @extend .button-responsive;
   margin: 0 auto;
-  border: 2px solid;
-  border-radius: 10px;
+  border: 4px solid;
+  border-radius: 15px;
   text-align: center;
   width: 150px;
   margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.delete-match-button:hover {
+  background-color: red;
+  color: white;
 }
 
 .user {
@@ -45,6 +51,10 @@ img {
   margin: 10px 0px;
 }
 
+.user:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .deal {
   border: 2px solid;
   border-radius: 10px;
@@ -52,8 +62,13 @@ img {
   margin: 10px 0px;
 }
 
+.deal:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .deal img {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  width: 400px;
 }
 
 .user-name {
@@ -76,6 +91,10 @@ img {
   background-color:rgba(0,0,0,0.4);
 }
 
+#match-section:hover {
+  background-color:rgba(0,0,0,0.8);
+}
+
 #deal-section {
   border: 2px solid;
   border-radius: 10px;
@@ -84,14 +103,24 @@ img {
   background-color:rgba(0,0,0,0.4);
 }
 
+#deal-section:hover {
+  background-color:rgba(0,0,0,0.8);
+}
+
 .interested-button {
   @extend .button-responsive;
   margin: 0 auto;
-  border: 2px solid;
-  border-radius: 10px;
+  border: 4px solid;
+  border-radius: 15px;
   text-align: center;
   width: 150px;
   margin-bottom: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.interested-button:hover {
+  background-color: green;
+  color: white;
 }
 
 // override for the 'Home' navigation link
