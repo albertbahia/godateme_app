@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140901010459) do
+ActiveRecord::Schema.define(version: 20140903182139) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 20140901010459) do
   create_table "matches", force: true do |t|
     t.integer "user_id1"
     t.integer "user_id2"
-    t.integer "date_deal_id"
   end
 
   create_table "users", force: true do |t|
