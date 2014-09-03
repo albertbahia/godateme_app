@@ -4,4 +4,4 @@ App.UsersCollection = Backbone.Collection.extend({
 	initialize: function() {
 		console.log('New User Collection');
 	}
-});
+});	
