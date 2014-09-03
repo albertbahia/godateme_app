@@ -1,10 +1,11 @@
 <div id={{id}}>
 	<h3 class="user-name"><strong>Name: </strong>{{name}}</h3>
-	<img src="{{photo}}">
+	<img src="{{photo}}" class="img-circle">
 	<p class="user-age"><strong>Age: </strong>{{age}}</p>
 	<p class="user-interest-category"><strong>Interest Category: </strong>{{interest_category}}</p>
 </div>
 <div class="button-section">
-	<a href="#"><div class="interested-button">Interested</div></a>
-	<a href="#"><div class="delete-match-button">Not Interested</div></a>
-</div>
+	<button type="button" class="interested-button">Interested</button>
+	<button type="button" class="destroy" data-id={{id}}>Not Interested</span>
+</button>
+

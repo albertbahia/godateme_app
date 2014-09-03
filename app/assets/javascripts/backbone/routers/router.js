@@ -8,7 +8,6 @@ App.Router = Backbone.Router.extend({
 	},
 
 	index: function() {
-		console.log('users router index');
 		App.usersCollection.fetch({reset: true});
 	}
 
