@@ -1,5 +1,4 @@
 # GoDate.Me
-================
 
 ### Brief Synopsis
 GoDate.Me is a website where users get matched with other users based on their interests.  Online deals based on those interests are presented to the matched users for suggested dates. 
