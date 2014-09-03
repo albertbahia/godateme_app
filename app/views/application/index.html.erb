@@ -8,6 +8,9 @@
 		App.dealsCollection = new App.DealsCollection();
 		App.dealsCollection.fetch({reset: true});
 
+		App.matchesCollection = new App.MatchesCollection();
+		App.matchesCollection.fetch({reset: true});
+
 
 		// Load views
 		App.usersView = new App.UserListView({
@@ -18,8 +21,11 @@
 			collection: App.dealsCollection
 		});
 
+		App.matchesView = new App.MatchListView({
+			collection: App.matchesCollection
+		})
 
-		// Load Routers
+		// Load Router
 		App.usersRouter = new App.Router();
 
 		Backbone.history.start();

@@ -3,6 +3,7 @@ class MatchesController < ApplicationController
 	
 	def index
 		@matches = Match.where(user_id1: current_user.id)
+		binding.pry
 		render status: 200, json: @matches.to_json
 	end
 
