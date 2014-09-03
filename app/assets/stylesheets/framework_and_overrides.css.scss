@@ -2,11 +2,98 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+body { 
+  background: url(image_path('bg@1440.jpg')) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#main-header-title {
+  color: white;
+}
+
+.section-title {
+  color: white;
+}
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
   }
+
+.delete-match-button {
+  @extend .button-responsive;
+  margin: 0 auto;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.user {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px 0px;
+}
+
+.deal {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px 0px;
+}
+
+.deal img {
+  margin-bottom: 10px;
+}
+
+.user-name {
+  color: white;
+}
+
+.user-age {
+  color: white;
+}
+
+.user-interest-category {
+  color: white;
+}
+
+#match-section {
+  border: 2px solid;
+  border-radius: 10px;
+  @extend .col-xs-6;
+  @extend .text-center;
+  background-color:rgba(0,0,0,0.4);
+}
+
+#deal-section {
+  border: 2px solid;
+  border-radius: 10px;
+  @extend .col-xs-6;
+  @extend .text-center;
+  background-color:rgba(0,0,0,0.4);
+}
+
+.interested-button {
+  @extend .button-responsive;
+  margin: 0 auto;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 3px;
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
@@ -35,7 +122,7 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+  /*background-color: #eee;*/
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
