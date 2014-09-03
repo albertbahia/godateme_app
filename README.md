@@ -1,48 +1,23 @@
-Godateme App
+# GoDate.Me
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+### Brief Synopsis
+GoDate.Me is a website where users get matched with other users based on their interests.  Online deals based on those interests are presented to the matched users for suggested dates. 
 
-Rails Composer is open source and supported by subscribers. Please join RailsApps to support development of Rails Composer.
+### Technologies Used
+- Database: PostgreSQL
+- Backend: Rails
+- Frontend: Backbone.js
+- Styling: Bootstrap / CSS3
+- API: Sqoot API (Online Deals / Coupons Aggregator)
 
-Problems? Issues?
------------
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+### ERD
+https://www.lucidchart.com/documents/view/5175afc4-9f19-48bb-b441-a6d32cd22940/0
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+### User Stories / Trello
+https://trello.com/b/6FdLv3lH/albert-bahia-godate-me
 
-If the application doesn’t work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
+### Github / Repo
+https://github.com/albertbahia/godateme_app
 
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.1.2
-- Rails 4.1.4
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
