@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :interests
-  has_and_belongs_to_many :matches
+  has_many :matches
 
   def find_matches
 		users = User.all 
@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
 		end
 	end
 
-	
+
 	def find_matched_deals
 		deals = Deal.all
 		matched_deals = deals.select do |deal|
