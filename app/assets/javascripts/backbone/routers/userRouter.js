@@ -1,4 +1,4 @@
-App.UsersRouters = Backbone.Router.extend({
+App.Router = Backbone.Router.extend({
 	routes: {
 		'': 'index',
 	},

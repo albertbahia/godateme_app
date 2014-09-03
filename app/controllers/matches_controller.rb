@@ -2,7 +2,7 @@ class MatchesController < ApplicationController
 	before_filter :authenticate_user!
 	
 	def index
-		@matches = Match.all
+		@matches = Match.where(user_id1: current_user.id)
 		render status: 200, json: @matches.to_json
 	end
 

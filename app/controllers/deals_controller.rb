@@ -2,7 +2,7 @@ class DealsController < ApplicationController
 	before_filter :authenticate_user!
 
 	def index
-		@deals = Deal.all
+		@deals = current_user.find_matched_deals
 		render status: 200, json: @deals.to_json
 	end
 

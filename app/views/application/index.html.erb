@@ -20,9 +20,7 @@
 
 
 		// Load Routers
-		App.usersRouters = new App.UsersRouters();
-		// App.dealsRouters = new App.DealsRouters();
-
+		App.usersRouter = new App.Router();
 
 		Backbone.history.start();
 		console.log('OH EM GEEE');
@@ -40,7 +38,7 @@
 	<div id="match-list"></div>
 </div>
 
-<h2>My Deals</h2>
+<h2>My Suggested Dates / Deals</h2>
 <div id="deal-section">
   <div id="deal-list"></div>
 </div>
