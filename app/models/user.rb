@@ -23,12 +23,8 @@ class User < ActiveRecord::Base
 		end
 	end
 
-
 	def find_matched_deals
-		deals = Deal.all
-		matched_deals = deals.select do |deal|
-			self.interest_category == deal.category
-		end
+		deals = Deal.where(category: self.interest_category)
 	end
 
 end
