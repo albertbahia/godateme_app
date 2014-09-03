@@ -13,6 +13,7 @@ body {
 
 #main-header-title {
   color: white;
+  margin-bottom: 20px;
 }
 
 .section-title {
@@ -36,7 +37,8 @@ img {
   text-align: center;
   width: 150px;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .delete-match-button:hover {
@@ -115,7 +117,8 @@ img {
   text-align: center;
   width: 150px;
   margin-bottom: 3px;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  background-color: rgba(0, 255, 0, 0.3);
 }
 
 .interested-button:hover {
@@ -126,7 +129,12 @@ img {
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
+  color: white;
   }
+
+li.nav-link {
+  color: white;
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes

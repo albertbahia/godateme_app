@@ -29,6 +29,6 @@ App = {
 	Models: {},
 	Views: {},
 	Collections: {},
-	Routers: {}
+	Router: {}
 };
 
