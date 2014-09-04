@@ -12,6 +12,10 @@ body {
   font-family: 'Crete Round', serif;
 }
 
+.navbar-header {
+  margin-left: 400px;
+}
+
 #main-header-title {
   color: white;
   margin-bottom: 20px;
@@ -151,6 +155,7 @@ img {
 .navbar-brand {
   font-size: inherit;
   color: white;
+  font-size: x-large;
 }
 
 .button-section {
@@ -159,6 +164,7 @@ img {
 
 li.nav-link {
   color: white;
+  font-size: x-large;
 }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
@@ -201,6 +207,10 @@ section {
   padding-top: 50px;
   max-width: 320px;
   margin: 0 auto;
+}
+
+.cancel-account-header {
+  color: rgba(226, 232, 234, 1);
 }
 
 #authform-title {

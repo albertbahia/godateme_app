@@ -1,9 +1,19 @@
 <%# add navigation links to this file %>
+<div class="navbar-header">
+	<%= link_to 'GoDate.Me', root_path, class: 'navbar-brand' %>
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+	<%= link_to 'Home', root_path, class: 'navbar-brand' %>
+</div>
 <% if user_signed_in? %>
-  <li class="nav-link"><%= link_to 'My Profile', edit_user_registration_path %></li>
+  <li class="nav-link"><%= link_to 'My Profile', edit_user_registration_path %></li> 
   <li class="nav-link"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
-  <li class="nav-link"><%= link_to 'Sign in', new_user_session_path %></li>
+  <li class="nav-link"><%= link_to 'Sign in', new_user_session_path %></li> 
   <li class="nav-link"><%= link_to 'Sign up', new_user_registration_path %></li>
 <% end %>
 
