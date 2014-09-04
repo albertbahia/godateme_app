@@ -65,7 +65,6 @@ user_id1s.each do |user_id1|
 	Match.create({
 		user_id1: user_id1,
 		user_id2: user_id2s.sample,
-		date_deal_id: date_deal_ids.sample
 	})
 end
 
