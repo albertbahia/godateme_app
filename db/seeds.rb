@@ -38,12 +38,12 @@ genders = ['Male', 'Female']
 
 names = ['sheldon', 'leonard', 'penny', 'raj', 'howard']
 
-photos = ['http://www.placekitten.com/300/300', 'http://www.placesheen.com/200/200']
+photos = ['http://i.imgur.com/CPmva.jpg', 'http://img4.wikia.nocookie.net/__cb20111125204212/icarly/images/4/4a/Icarly-the-big-bang-theory-sheldon.PNG', 'http://www.placesheen.com/200/200']
 
 ages = [20, 21, 22, 23, 24, 25, 26, 27, 28]
 
 emails.each do |email|
-	User.create!({
+	User.create({
 		email: email,
 		name: names.sample,
 		gender: genders.sample,
