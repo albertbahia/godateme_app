@@ -4,6 +4,7 @@ App.UserView = Backbone.View.extend({
 	initialize: function() {
 		console.log('New User View!');
 		this.template = HandlebarsTemplates['users/user'];
+		// this.templateDeal = HandlebarsTemplates['deals/deal']
 		this.listenTo(this.model, 'change', this.render);
 		this.listenTo(this.model, 'destroy', this.fadeAndRemove);
 		this.render();
@@ -12,10 +13,11 @@ App.UserView = Backbone.View.extend({
 	render: function() {
 		this.$el.empty();
 		this.$el.html(this.template(this.model.toJSON()));
+		// this.$el.html(this.templateDeal(this.model.toJSON()));
 	},
 
 	events: {
-		'click button.destroy' : 'fadeAndRemove'
+		'click button' : 'fadeAndRemove'
 	},
 
 	fadeAndRemove: function() {

@@ -9,6 +9,7 @@ App.Router = Backbone.Router.extend({
 
 	index: function() {
 		App.usersCollection.fetch({reset: true});
+		App.dealsCollection.fetch({reset: true});
 	}
 
 

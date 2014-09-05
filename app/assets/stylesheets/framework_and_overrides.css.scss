@@ -10,10 +10,16 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Crete Round', serif;
+  margin: 0 0 100px; /* bottom = footer height */ 
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 .navbar-header {
-  margin-left: 400px;
+  margin-left: 600px;
 }
 
 #main-header-title {
@@ -253,4 +259,12 @@ footer {
   font-size: x-large;
   margin-top: 205px;
   color: rgba(226, 232, 234, 1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
+
+
+
