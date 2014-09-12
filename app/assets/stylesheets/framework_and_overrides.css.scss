@@ -101,6 +101,18 @@ img {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+#user-section {
+  border: 2px solid;
+  border-radius: 10px;
+  @extend .text-center;
+  background-color:rgba(0,0,0,0.4);
+  margin-top: 80px;
+}
+
+#user-section:hover {
+  background-color:rgba(0,0,0,0.8);
+}
+
 .user-name {
   color: white;
 }
