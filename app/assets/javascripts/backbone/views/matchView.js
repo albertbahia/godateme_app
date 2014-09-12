@@ -16,5 +16,7 @@ App.MatchView = Backbone.View.extend({
 	},
 	showMatch: function() {
 		console.log('showmatch');
+		var match = this.model;
+		App.router.navigate('match/' + match.id);
 	}
 });
