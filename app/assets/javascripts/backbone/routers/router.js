@@ -1,6 +1,7 @@
 App.Router = Backbone.Router.extend({
 	routes: {
 		'': 'index',
+		'/match/:id' : 'showMatch'
 	},
 
 	initialize: function() {
@@ -9,7 +10,12 @@ App.Router = Backbone.Router.extend({
 
 	index: function() {
 		App.usersCollection.fetch({reset: true});
+		App.matchesCollection.fetch({reset: true})
 		App.dealsCollection.fetch({reset: true});
+	},
+
+	showMatch: function() {
+		console.log('showmatch');
 	}
 
 
