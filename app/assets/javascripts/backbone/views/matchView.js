@@ -4,7 +4,7 @@ App.MatchView = Backbone.View.extend({
 		console.log('New Match View');
 		this.template = HandlebarsTemplates['matches/match'];
 		this.listenTo(this.model, 'change', this.render);
-		this.listenTo(this.model, 'match', this.showMatch);
+		this.listenTo(this.model, 'img-circle', this.showMatch);
 		this.render();
 	},
 	render: function() {
