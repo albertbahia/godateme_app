@@ -16,7 +16,8 @@ App.Router = Backbone.Router.extend({
 
 	showMatch: function() {
 		console.log('showmatchRouter');
-		
+		// var matches = App.matchesCollection;
+		// $('.modal-dialog').fadeIn(1000);
 	}
 
 
