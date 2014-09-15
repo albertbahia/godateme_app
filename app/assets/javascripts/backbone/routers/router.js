@@ -16,7 +16,7 @@ App.Router = Backbone.Router.extend({
 
 	showMatch: function() {
 		console.log('showmatchRouter');
-		var match = 
+		
 	}
 
 
