@@ -11,6 +11,7 @@
 <% if user_signed_in? %>
 	<li class="nav-link"><%= link_to 'Home', '/', class: 'navbar-brand' %></li>	
   <li class="nav-link"><%= link_to 'My Profile', edit_user_registration_path %></li> 
+  <li class="nav-link"><%= link_to 'Matches That I\'m Interested In' %>
   <li class="nav-link"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
   <li class="nav-link"><%= link_to 'Sign in', new_user_session_path %></li> 
