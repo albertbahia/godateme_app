@@ -27,6 +27,7 @@ App.MatchView = Backbone.View.extend({
 	},
 	destroyMatch: function() {
 		console.log('destroyed!');
+		this.$el.fadeOut();
 	}
 
 
