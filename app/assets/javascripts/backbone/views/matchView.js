@@ -13,7 +13,7 @@ App.MatchView = Backbone.View.extend({
 		this.$el.html(this.template(this.model.toJSON()));
 	},
 	events: {
-		'click' : 'showMatch',
+		'click .img-circle' : 'showMatch',
 		'click .destroy' : 'destroyMatch'
 	},
 	showMatch: function() {
