@@ -1,5 +1,4 @@
 App.UserView = Backbone.View.extend({
-	el: '#matched-user',
 	className: 'user',
 
 	initialize: function() {
