@@ -26,7 +26,8 @@ categories.each do |category|
 			description: deal['deal']['description'],
 			image_url: deal['deal']['image_url'],
 			expiration_date: deal['deal']['expires_at'],
-			merchant_id: deal['deal']['merchant']['id']
+			merchant_id: deal['deal']['merchant']['id'],
+			purchase_url: deal['deal']['url']
 		})
 	end
 end
