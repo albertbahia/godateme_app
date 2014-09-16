@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140915195439) do
+ActiveRecord::Schema.define(version: 20140916195559) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20140915195439) do
     t.string  "image_url"
     t.string  "expiration_date"
     t.integer "merchant_id"
+    t.string  "purchase_url"
   end
 
   create_table "interests", force: true do |t|
