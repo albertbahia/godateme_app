@@ -19,7 +19,6 @@ App.MatchView = Backbone.View.extend({
 	showMatch: function() {
 		var match = this.model;
 		$('#myModal').hide().fadeIn();
-		console.log(match.attributes.photo);
 		$('.matched-user-photo').attr("src", match.attributes.photo);
 		$('.matched-user-name').text(match.attributes.name);
 		$('.matched-user-age').text(match.attributes.age);
