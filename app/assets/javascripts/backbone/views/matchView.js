@@ -19,6 +19,8 @@ App.MatchView = Backbone.View.extend({
 	showMatch: function() {
 		var match = this.model;
 		$('#myModal').hide().fadeIn();
+		$('.modal-header-matched-user-name-age').remove();
+		$('<h2 class="modal-header-matched-user-name-age">').text(match.attributes.name + ', ' + match.attributes.age).appendTo('.modal-header');
 		$('.matched-user-photo').attr("src", match.attributes.photo);
 		$('.matched-user-name').text(match.attributes.name);
 		$('.matched-user-age').text(match.attributes.age);
