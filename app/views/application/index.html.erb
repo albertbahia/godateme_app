@@ -1,2 +1,79 @@
 <h2 id="welcome">Welcome to GoDate.Me!  Where Tinder Meets HowAboutWe Meets Groupon</h2>
 
+<script type="text/javascript">
+
+	$(function() {
+
+		// Load collections
+		App.usersCollection = new App.UsersCollection();
+		App.usersCollection.fetch({reset: true});
+
+		App.dealsCollection = new App.DealsCollection();
+		App.dealsCollection.fetch({reset: true});
+
+		App.matchesCollection = new App.MatchesCollection();
+		App.matchesCollection.fetch({reset: true});
+
+
+		// Load views
+		App.usersView = new App.UserListView({
+			collection: App.usersCollection
+		});
+
+		App.dealsView = new App.DealListView({
+			collection: App.dealsCollection
+		});
+
+		App.matchesView = new App.MatchListView({
+			collection: App.matchesCollection
+		})
+
+		// Load Router
+		App.router = new App.Router();
+
+		Backbone.history.start();
+
+	});
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+      	<div id="matched-user">
+      		<img class="matched-user-photo img-circle">
+      		<hr>
+      		<h2>Name: <span class="matched-user-name"></span></h2>
+      		<h2>Age: <span class="matched-user-age"></span></h2>
+      	</div>
+        <h3>Interests That Matched:</h3>
+        <ul><li class="matched-user-interest-category"></li></ul>
+        <div id="deal-section">
+					<h2 class="section-title">My Suggested Dates / Deals</h2>
+				  <div id="deal-list"></div>
+				</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="destroy">Not Interested</button>
+        <button type="button" class="interested-button">Interested</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div id="user-section">
+	<h2 class="section-title">Users</h2>
+	<ul id="user-list"></ul>
+</div> -->
+
+<div id="match-section">
+	<h2 class="section-title">My Matches</h2>
+	<div id="match-list"></div>
+</div>
+
+
