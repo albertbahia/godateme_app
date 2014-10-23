@@ -19,7 +19,7 @@ html {
 }
 
 .navbar-header {
-  margin-left: 600px;
+  margin-left: 300px;
 }
 
 #main-header-title {
@@ -71,6 +71,7 @@ img {
 }
 
 .img-circle {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -90,24 +91,44 @@ img {
   width: 400px;
 }
 
+.match {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0px;
+}
 
+.match:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#user-section {
+  border: 2px solid;
+  border-radius: 10px;
+  @extend .text-center;
+  background-color:rgba(0,0,0,0.4);
+  margin-top: 80px;
+}
+
+#user-section:hover {
+  background-color:rgba(0,0,0,0.8);
+}
 
 .user-name {
-  color: white;
+  color: black;
 }
 
 .user-age {
-  color: white;
+  color: black;
 }
 
 .user-interest-category {
-  color: white;
+  color: black;
 }
 
 #match-section {
   border: 2px solid;
   border-radius: 10px;
-  @extend .col-xs-6;
   @extend .text-center;
   background-color:rgba(0,0,0,0.4);
   margin-top: 80px;
@@ -120,10 +141,9 @@ img {
 #deal-section {
   border: 2px solid;
   border-radius: 10px;
-  @extend .col-xs-6;
   @extend .text-center;
   background-color:rgba(0,0,0,0.4);
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 #deal-section:hover {
@@ -155,6 +175,10 @@ img {
   width: 150px;
   color: black;
   background-color: rgba(0, 255, 0, 0.3);
+}
+
+.interest-button-section {
+  margin-bottom: 10px;
 }
 
 .interested-button:hover {

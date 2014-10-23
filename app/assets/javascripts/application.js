@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// = require turbolinks
 //= require underscore
 //= require backbone
 //= require handlebars
@@ -31,4 +31,5 @@ App = {
 	Collections: {},
 	Router: {}
 };
+
 

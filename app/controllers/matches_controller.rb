@@ -3,7 +3,7 @@ class MatchesController < ApplicationController
 	
 	def index
 		# @matches = Match.where(user_id1: current_user.id)
-		# @matches = current_user.find_matches
+		@matches = current_user.find_matches
 		render status: 200, json: @matches.to_json
 	end
 
